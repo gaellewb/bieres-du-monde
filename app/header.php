@@ -49,6 +49,7 @@ function nav_item (string $lien, string $titre): string
                 <?= nav_item('/ecf_sbdm/HomeController', 'Accueil') ; ?>
                 <?= nav_item('/ecf_sbdm/BeersController', 'Nos bières') ; ?>
                 <?= nav_item('/ecf_sbdm/ColorController', 'Nos couleurs') ; ?>
+                <?= nav_item('/ecf_sbdm/views/essai', 'Essai') ; ?>
                 </ul>
             </div>
         </div>

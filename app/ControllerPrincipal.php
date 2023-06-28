@@ -1,16 +1,11 @@
 <?php
 abstract class ControllerPrincipal{
+    // Je crée une fonction qui remplace et télécharge $model pour chaque nouveau model
     public function loadModel(string $model){
         // ROOT permet d'aller chercher directement à la racine
         require_once(ROOT.'models/'.$model.'.php');
         $this->$model = new $model();
     }
-
-    public function render (string $ficher){
-        require_once(ROOT.'views/'.strtolower(get_class($this)).'/'.$fichier.'.php');
-    }
-
-
 
 }
 
