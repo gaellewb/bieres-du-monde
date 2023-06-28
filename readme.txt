@@ -1,0 +1,21 @@
+- index.php
+- router.php
+- controllers/
+    - HomeController.php
+    - BeersController.php
+    - ColorController.php
+    - ErrordController.php
+- views/
+    - home.php
+    - beers.php
+    - color.php
+    - error.php
+- models/
+- app/
+    - ControllerPrincipal.php
+    - loginBdd.php
+    - ModelPrincipal.php
+- styles/
+    - style.css
+- assets/
+    - img
