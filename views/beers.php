@@ -1,34 +1,39 @@
 <?php
 $titlePage = "Nos bières | SBDM";
 $descriptionPage = "Découvrez toutes les bières du Salon des Bières du Monde";
-require (ROOT.'app/header.php');
+require 'app/header.php';
 ?>
 
-<h1>Liste de toutes les bières</h1>
-
+<h1>Nos bières</h1>
 
 <div class="container">
-<?php 
-foreach ($bieres as $biere): 
-?>
-    <div class="row">
-        <div class="offset-1 col-2 mb-2">
-            <?php 
-            echo $biere['ID_ARTICLE']
-            ?> 
-            - 
-            <?php 
-            echo $biere['NOM_ARTICLE'] 
-            ?> 
-        </div>
-    </div>
-<?php 
-endforeach 
-?>
-</div>
 
+<table class="table">
+    <thead class="thead-">
+        <tr>
+            <th scope="col">N° bière</th>
+            <th scope="col">Nom bière</th>
+            <th scope="col">Couleur</th>
+            <th scope="col">Type</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    <?php foreach ($bieres as $biere): ?>
+
+    <tr>
+        <?= "<td>". $biere['ID_ARTICLE']."</td>" ?> 
+        <?= "<td>". $biere['NOM_ARTICLE']."</td>" ?> 
+        <?= "<td>". $biere['NOM_COULEUR']."</td>" ?> 
+        <?= "<td>". $biere['NOM_TYPE']."</td>" ?> 
+    </tr>
+
+    <?php endforeach ?>
+    </tbody>
+
+</table>
 
 
 <?php
-require (ROOT.'app/footer.php');
+require 'app/footer.php';
 ?>

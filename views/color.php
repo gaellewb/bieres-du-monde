@@ -1,7 +1,7 @@
 <?php
 $titlePage = "Nos couleurs | SBDM";
 $descriptionPage = "Découvrez toutes nos bières selon leur couleur.";
-require (ROOT.'app/header.php');
+require 'app/header.php';
 ?>
 
 <h1>Sélectionnez une couleur :</h1>
@@ -9,5 +9,5 @@ require (ROOT.'app/header.php');
 
 
 <?php
-require (ROOT.'app/footer.php');
+require 'app/footer.php';
 ?>

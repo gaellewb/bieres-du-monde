@@ -2,7 +2,8 @@
 require_once 'models/BeersModel.php';
 
 // BeersController hérite du ControllerPrincipal
-class BeersController extends ControllerPrincipal{
+// class BeersController extends ControllerPrincipal{
+class BeersController {
     // public function index() {
             // require 'models/BeersModel.php';
             // $beersModel = new BeersModel();

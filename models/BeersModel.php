@@ -6,18 +6,31 @@ class BeersModel extends ModelPrincipal {
     public function __construct(){
         // Connexion à la base de données
         $this->getConnection();
-    // echo "rhiiiiiiiiiiiiiiiiiiii";
     }
 
     public function getAllBeers(){
-        $sql = "SELECT * FROM article";
+        $sql = "SELECT A.ID_ARTICLE, A.NOM_ARTICLE, C.NOM_COULEUR, T.NOM_TYPE
+        FROM article A 
+        LEFT JOIN couleur C ON A.ID_COULEUR = C.ID_COULEUR
+        LEFT JOIN typebiere T ON A.ID_TYPE = T.ID_TYPE
+        ORDER BY A.ID_ARTICLE ASC";
         $requete = $this->connexion->query($sql);
         $requete->execute();
         return $requete ->fetchAll();
-        // echo "rhAAAAAAAAAAAAAAAAAAAA";
+    }
+
+    public function getRandBeers(){
+        $sql = "SELECT A.ID_ARTICLE, A.NOM_ARTICLE, C.NOM_COULEUR, T.NOM_TYPE
+        FROM article A 
+        LEFT JOIN couleur C ON A.ID_COULEUR = C.ID_COULEUR
+        LEFT JOIN typebiere T ON A.ID_TYPE = T.ID_TYPE
+        ORDER BY RAND()
+        LIMIT 5";
+        $requete = $this->connexion->query($sql);
+        $requete->execute();
+        return $requete ->fetchAll();
     }
 
 }
 
-// echo "rhOOOOOOOOOOOOOOOOOOO";
     

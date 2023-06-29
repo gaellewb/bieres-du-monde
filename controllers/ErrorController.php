@@ -5,5 +5,3 @@ class ErrorController {
         require 'views/error.php';
     }
 }
-
-?>
