@@ -1,0 +1,31 @@
+class PersonnesModel {
+
+  private $conn;
+
+
+
+  public function __construct() {
+
+    require_once 'config.php';
+
+    $this->conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+
+  }
+
+
+
+  public function getAllPersonnes() {
+
+    $query = "SELECT * FROM personnes";
+
+    $stmt = $this->conn->prepare($query);
+
+    $stmt->execute();
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+  }
+
+
+
+}

@@ -9,21 +9,34 @@ require "../models/EssaiModel.php" ;
 
 <h1>Page ESSAI</h1>
 
+
+<?php 
+
+// $bieres = new EssaiModel();
+// $bieres -> getAll();
+// var_dump($bieres);
+echo $essai;
+?>
+
 <div class="container">
     <h1 class="text-center m-4">Liste des bieres</h1>
-<?php foreach ($bieres as $biere): ?>
+<?php 
+foreach ($bieres as $biere): 
+?>
         <div class="row">
             <div class="offset-1 col-2 mb-2">
-                <?= $biere['ID_ARTICLE'] ?> -
-            </div>
-            <div class="col-3 mb-2">
-                <?= $biere['NOM_ARTICLE'] ?>
-            </div>
-            <div class="col-6">
-                <?= $biere['VOLUME'] ?>
+                <?php
+                $biere['ID_ARTICLE']
+                ?>
+                 <!-- -  -->
+                <?php 
+                $biere['NOM_ARTICLE'] 
+                ?> 
             </div>
         </div>
-    <?php endforeach ?>
+    <?php 
+    endforeach 
+    ?>
 </div>
 
 
