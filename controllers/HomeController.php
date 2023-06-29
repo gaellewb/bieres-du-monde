@@ -10,7 +10,7 @@ class HomeController {
     }
 
     public function index() {
-        $bieres = $this->model->getRandBeers();
+        $beers = $this->model->getRandBeers();
         require 'views/home.php';
     }
 }

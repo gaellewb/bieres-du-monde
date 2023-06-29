@@ -1,7 +1,7 @@
 <?php
 
 // BeersModel hérite de ModelPrincipal
-class BeersModel extends ModelPrincipal {
+class BeersModel extends MainModel {
     
     public function __construct(){
         // Connexion à la base de données
@@ -14,9 +14,9 @@ class BeersModel extends ModelPrincipal {
         LEFT JOIN couleur C ON A.ID_COULEUR = C.ID_COULEUR
         LEFT JOIN typebiere T ON A.ID_TYPE = T.ID_TYPE
         ORDER BY A.ID_ARTICLE ASC";
-        $requete = $this->connexion->query($sql);
-        $requete->execute();
-        return $requete ->fetchAll();
+        $query = $this->connection->query($sql);
+        $query->execute();
+        return $query ->fetchAll();
     }
 
     public function getRandBeers(){
@@ -26,11 +26,8 @@ class BeersModel extends ModelPrincipal {
         LEFT JOIN typebiere T ON A.ID_TYPE = T.ID_TYPE
         ORDER BY RAND()
         LIMIT 5";
-        $requete = $this->connexion->query($sql);
-        $requete->execute();
-        return $requete ->fetchAll();
+        $query = $this->connection->query($sql);
+        $query->execute();
+        return $query ->fetchAll();
     }
-
 }
-
-    

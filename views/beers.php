@@ -4,9 +4,9 @@ $descriptionPage = "Découvrez toutes les bières du Salon des Bières du Monde"
 require 'app/header.php';
 ?>
 
-<h1>Nos bières</h1>
-
 <div class="container">
+
+<h1>Nos bières</h1>
 
 <table class="table">
     <thead class="thead-">
@@ -19,13 +19,13 @@ require 'app/header.php';
     </thead>
 
     <tbody>
-    <?php foreach ($bieres as $biere): ?>
+    <?php foreach ($beers as $beer): ?>
 
     <tr>
-        <?= "<td>". $biere['ID_ARTICLE']."</td>" ?> 
-        <?= "<td>". $biere['NOM_ARTICLE']."</td>" ?> 
-        <?= "<td>". $biere['NOM_COULEUR']."</td>" ?> 
-        <?= "<td>". $biere['NOM_TYPE']."</td>" ?> 
+        <?= "<td>". $beer['ID_ARTICLE']."</td>" ?> 
+        <?= "<td>". $beer['NOM_ARTICLE']."</td>" ?> 
+        <?= "<td>". $beer['NOM_COULEUR']."</td>" ?> 
+        <?= "<td>". $beer['NOM_TYPE']."</td>" ?> 
     </tr>
 
     <?php endforeach ?>

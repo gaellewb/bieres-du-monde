@@ -1,8 +1,15 @@
 <?php
+require_once 'models/ColorModel.php';
 
 class ColorController {
-    public function index() {
+    private $model;
+
+    public function __construct() {
+        $this->model = new ColorModel();
+    }
+
+    public function index() {   
+        $beersColor = $this->model->getBlond();
         require 'views/color.php';
     }
 }
-

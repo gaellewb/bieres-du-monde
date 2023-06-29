@@ -4,8 +4,9 @@ $descriptionPage = "Chaque jour, décourvez 5 bières différentes pour un tour 
 require 'app/header.php';
 ?>
 
+<div class="container">
 
-<h1>Découvrez nos bières :</h1>
+<h1>Découvrez 5 bières au hasard :</h1>
 
 <table class="table">
     <thead class="thead-">
@@ -18,19 +19,21 @@ require 'app/header.php';
     </thead>
 
     <tbody>
-    <?php foreach ($bieres as $biere): ?>
+    <?php foreach ($beers as $beer): ?>
 
     <tr>
-        <?= "<td>". $biere['ID_ARTICLE']."</td>" ?> 
-        <?= "<td>". $biere['NOM_ARTICLE']."</td>" ?> 
-        <?= "<td>". $biere['NOM_COULEUR']."</td>" ?> 
-        <?= "<td>". $biere['NOM_TYPE']."</td>" ?> 
+        <?= "<td>". $beer['ID_ARTICLE']."</td>" ?> 
+        <?= "<td>". $beer['NOM_ARTICLE']."</td>" ?> 
+        <?= "<td>". $beer['NOM_COULEUR']."</td>" ?> 
+        <?= "<td>". $beer['NOM_TYPE']."</td>" ?> 
     </tr>
 
     <?php endforeach ?>
     </tbody>
 
 </table>
+
+</div>
 
 <?php
 require 'app/footer.php';

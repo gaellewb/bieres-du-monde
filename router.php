@@ -1,6 +1,6 @@
 <?php
 
-require_once 'app/ModelPrincipal.php';
+require_once 'app/MainModel.php';
 
 $url = $_SERVER['REQUEST_URI'];
 

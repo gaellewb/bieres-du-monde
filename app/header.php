@@ -40,7 +40,7 @@ function nav_item (string $lien, string $titre): string
 <header>
     <nav class="navbar navbar-expand-md navbar-dark mb-4 navbar-monbg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/ecf_sbdmVDavid/HomeController/home"><img src="../assets/img/logo6.png" alt="petit logo PHP"></a>
+            <a class="navbar-brand" href="/ecf_sbdm/HomeController/home"><img src="../assets/img/logo6.png" alt="petit logo PHP"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
