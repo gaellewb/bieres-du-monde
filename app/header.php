@@ -4,12 +4,12 @@ function nav_item (string $lien, string $titre): string
 {
     $classe = 'nav-link';
     if ($_SERVER['SCRIPT_NAME'] === $lien) {
-        $classe = $classe . ' active';
+        $classe = $classe . 'active';
         // j'aurai pu aussi écrire $classe .= ' active'; c'est pareil
     }
-    return '<li class="nav-item">
-        <a class="' . $classe . '" href="' . $lien . '">' . $titre . '</a>
-    </li>' ;
+    return '<li class="nav-item text-center">
+                <a class="' . $classe . '" href="' . $lien . '">' . $titre . '</a>
+            </li>' ;
 }
 ?>
 
@@ -47,8 +47,11 @@ function nav_item (string $lien, string $titre): string
             <div class="collapse navbar-collapse text-center" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
-                <?= nav_item('/ecf_sbdm/BeersController/beers', 'Nos bières') ; ?>
-                <?= nav_item('/ecf_sbdm/ColorController/color', 'Nos couleurs') ; ?>
+                <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
+                <?= nav_item('/ecf_sbdm/BlondController/blond', 'Nos blondes') ; ?>
+                <?= nav_item('/ecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
+                <?= nav_item('/ecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
+                <?= nav_item('/ecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
                 </ul>
             </div>
         </div>

@@ -19,9 +19,24 @@ switch ($page) {
         $controller = new BeersController();
         $controller->index();
         break;
-    case '/color':
-        require_once 'controllers/ColorController.php';
-        $controller = new ColorController();
+    case '/blond':
+        require_once 'controllers/BlondController.php';
+        $controller = new BlondController();
+        $controller->index();
+        break;
+    case '/brown':
+        require_once 'controllers/BrownController.php';
+        $controller = new BrownController();
+        $controller->index();
+        break;
+    case '/white':
+        require_once 'controllers/WhiteController.php';
+        $controller = new WhiteController();
+        $controller->index();
+        break;
+    case '/amber':
+        require_once 'controllers/AmberController.php';
+        $controller = new AmberController();
         $controller->index();
         break;
     default:
