@@ -20,23 +20,33 @@ switch ($page) {
         $controller->index();
         break;
     case '/blond':
-        require_once 'controllers/BlondController.php';
+        require_once 'controllers/colors/BlondController.php';
         $controller = new BlondController();
         $controller->index();
         break;
     case '/brown':
-        require_once 'controllers/BrownController.php';
+        require_once 'controllers/colors/BrownController.php';
         $controller = new BrownController();
         $controller->index();
         break;
     case '/white':
-        require_once 'controllers/WhiteController.php';
+        require_once 'controllers/colors/WhiteController.php';
         $controller = new WhiteController();
         $controller->index();
         break;
     case '/amber':
-        require_once 'controllers/AmberController.php';
+        require_once 'controllers/colors/AmberController.php';
         $controller = new AmberController();
+        $controller->index();
+        break;
+    case '/simpleCrud':
+        require_once 'controllers/simpleCrud/SimpleCrudController.php';
+        $controller = new SimpleCrudController();
+        $controller->index();
+        break;
+    case '/createColor':
+        require_once 'controllers/simpleCrud/CreateColorController.php';
+        $controller = new CreateColorController();
         $controller->index();
         break;
     default:

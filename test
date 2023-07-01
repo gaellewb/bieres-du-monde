@@ -14,11 +14,11 @@
 
 //////////////////////////////////////////////////////////////
 
-    Soit ut passes le champs en AI
+
 
  Soit tu dois d’abord récupérer le dernier ID
 
- $sql = "SELECT MAX(ID) as lastID FROM couleur";
+$sql = "SELECT MAX(ID) as lastID FROM couleur";
 
 $reponse = $connexion->prepare($sql);
 
@@ -51,3 +51,6 @@ $reponse->execute();
 insert last id + 1
 
 ///////////////////////////////////////
+
+
+

@@ -4,9 +4,10 @@ class MainModel {
     protected $connection ;
     
     public function getConnection() {
-        // Informations de connexion à la base de données :       
+        // Inclure la page d'informations de connexion :       
         require_once 'loginBdd.php';
-
+        
+        // Connexion à la base de données
         try {
             $this->connection = new PDO($bdd, $username, $password);
             // je m'assure d'envoyer les données en utf8

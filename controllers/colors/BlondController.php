@@ -1,7 +1,7 @@
 <?php
 require_once 'models/ColorModel.php';
 
-class BrownController {
+class BlondController {
     private $model;
 
     public function __construct() {
@@ -9,7 +9,7 @@ class BrownController {
     }
 
     public function index() {   
-        $brownBeers = $this->model->getBrown();
-        require 'views/brown.php';
+        $blondBeers = $this->model->getBlond();
+        require 'views/colors/blond.php';
     }
 }

@@ -53,5 +53,4 @@ class ColorModel extends MainModel {
         $query->execute();
         return $query->fetchAll();
     }
-
 }

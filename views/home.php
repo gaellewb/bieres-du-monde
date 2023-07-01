@@ -10,7 +10,7 @@ require 'app/header.php';
 
 <table class="table">
     <thead class="thead-">
-        <tr>
+        <tr class="text-center">
             <th scope="col">N° bière</th>
             <th scope="col">Nom bière</th>
             <th scope="col">Couleur</th>
@@ -21,7 +21,7 @@ require 'app/header.php';
     <tbody>
     <?php foreach ($beers as $beer): ?>
 
-    <tr>
+    <tr class="text-center">
         <?= "<td>". $beer['ID_ARTICLE']."</td>" ?> 
         <?= "<td>". $beer['NOM_ARTICLE']."</td>" ?> 
         <?= "<td>". $beer['NOM_COULEUR']."</td>" ?> 

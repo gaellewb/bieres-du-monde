@@ -1,16 +1,16 @@
 <?php
 $titlePage = "Nos couleurs | SBDM";
-$descriptionPage = "Découvrez toutes nos bières brunes.";
+$descriptionPage = "Découvrez toutes nos bières blanches.";
 require 'app/header.php';
 ?>
 
 <div class="container">
 
-<h1>Découvrez nos brunes :</h1>
+<h1>Découvrez nos blanches :</h1>
 
 <table class="table">
     <thead class="thead-">
-        <tr>
+        <tr class="text-center">
             <th scope="col">N° bière</th>
             <th scope="col">Nom bière</th>
             <th scope="col">Type</th>
@@ -18,12 +18,12 @@ require 'app/header.php';
     </thead>
 
     <tbody>
-    <?php foreach ($brownBeers as $brownBeer): ?>
+    <?php foreach ($whiteBeers as $whiteBeer): ?>
     
-    <tr>
-        <?= "<td>".$brownBeer['ID_ARTICLE']."</td>" ?>
-        <?= "<td>".$brownBeer['NOM_ARTICLE']."</td>" ?>
-        <?= "<td>".$brownBeer['NOM_TYPE']."</td>" ?>
+    <tr class="text-center">
+        <?= "<td>".$whiteBeer['ID_ARTICLE']."</td>" ?>
+        <?= "<td>".$whiteBeer['NOM_ARTICLE']."</td>" ?>
+        <?= "<td>".$whiteBeer['NOM_TYPE']."</td>" ?>
     </tr>
     <?php endforeach ?>
     </tbody>

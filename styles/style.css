@@ -1,9 +1,17 @@
+.myFont, h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
 .navbar-monbg {
     background-color: #000;
 }
 
 .monbg {
     background-color: rgb(164, 240, 240);
+    /* background-color: rgb(44, 50, 50); */
 }
 
 /* .navbar-nav {
@@ -11,8 +19,22 @@
 } */
 
 .nav-link {
-margin: 0 20px;
+    text-align: right;
+    color: #fff!important;
+
 }
 
+.nav-link:hover {
+    color: deeppink!important;
+}
+
+.btn-dark:hover {
+    color:rgb(234, 255, 0);
+}
+
+
+th {
+    border-bottom: 5px solid deeppink!important;
+}
 
 

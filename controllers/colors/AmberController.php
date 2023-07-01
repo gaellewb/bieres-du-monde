@@ -10,6 +10,6 @@ class AmberController {
 
     public function index(){
         $amberBeers = $this->model->getAmber();
-        require 'views/amber.php';
+        require 'views/colors/amber.php';
     }
 }

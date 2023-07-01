@@ -10,6 +10,6 @@ class WhiteController {
 
     public function index() {   
         $whiteBeers = $this->model->getWhite();
-        require 'views/white.php';
+        require 'views/colors/white.php';
     }
 }

@@ -6,11 +6,11 @@ require 'app/header.php';
 
 <div class="container">
 
-<h1>Découvrez nos ambrées :</h1>
+<h1 class="">Découvrez nos ambrées :</h1>
 
 <table class="table">
     <thead class="thead-">
-        <tr>
+        <tr class="text-center">
             <th scope="col">N° bière</th>
             <th scope="col">Nom bière</th>
             <th scope="col">Type</th>
@@ -20,7 +20,7 @@ require 'app/header.php';
     <tbody>
     <?php foreach ($amberBeers as $amberBeer): ?>
     
-    <tr>
+    <tr class="text-center">
         <?= "<td>".$amberBeer['ID_ARTICLE']."</td>" ?>
         <?= "<td>".$amberBeer['NOM_ARTICLE']."</td>" ?>
         <?= "<td>".$amberBeer['NOM_TYPE']."</td>" ?>
