@@ -44,9 +44,9 @@ switch ($page) {
         $controller = new SimpleCrudController();
         $controller->index();
         break;
-    case '/createColor':
-        require_once 'controllers/simpleCrud/CreateColorController.php';
-        $controller = new CreateColorController();
+    case '/complexCrud':
+        require_once 'controllers/complexCrud/ComplexCrudController.php';
+        $controller = new ComplexCrudController();
         $controller->index();
         break;
     default:

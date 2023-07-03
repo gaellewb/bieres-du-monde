@@ -3,21 +3,25 @@ require_once 'models/SimpleCrudModel.php';
 
 class SimpleCrudController {
 
-        private $model ;
-    
-        public function __construct(){
-            $this->model = new SimpleCrudModel();
-        }
-    
-        public function index(){
-            // appel de la fonction READ 
-            $propertiesColors = $this->model->getPropertiesColors();
+    private $model ;
 
-            // appel de la fonction CREATE
-            $createColor = $this->model->getCreateColor();
+    public function __construct(){
+        $this->model = new SimpleCrudModel();
+    }
 
-            // appel de la fonction modif
-            // appel de la fonction supp
-            require_once 'views/simpleCrud/simpleCrud.php';
-        }
+    public function index(){
+        // appel de la fonction READ 
+        $propertiesColors = $this->model->getPropertiesColors();
+
+        // appel de la fonction CREATE
+        $createColor = $this->model->getCreateColor();
+
+        // appel de la fonction UPDATE
+        $updateColors = $this->model->getUpdateColors();
+
+        // appel de la fonction DELETE
+        $deleteColor = $this->model->getDeleteColors();
+
+        require_once 'views/simpleCrud/simpleCrud.php';
+    }
 }

@@ -59,7 +59,8 @@ function nav_item (string $lien, string $titre): string
                 <?= nav_item('/ecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
                 <?= nav_item('/ecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
                 <?= nav_item('/ecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
-                <?= nav_item('/ecf_sbdm/SimpleCrudController/simpleCrud', 'Le coin des professionnels') ; ?>
+                <?= nav_item('/ecf_sbdm/SimpleCrudController/simpleCrud', 'CRUD simple') ; ?>
+                <?= nav_item('/ecf_sbdm/ComplexCrudController/complexCrud', 'CRUD complexe') ; ?>
                 </ul>
             </div>
         </div>
