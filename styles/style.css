@@ -4,24 +4,16 @@
     font-family: 'Varela Round', sans-serif;
 }
 
-
 .navbar-monbg {
     background-color: #000;
 }
 
 .monbg {
     background-color: rgb(164, 240, 240);
-    /* background-color: rgb(44, 50, 50); */
 }
 
-/* .navbar-nav {
-    padding-left: 200px;
-} */
-
 .nav-link {
-    text-align: right;
     color: #fff!important;
-
 }
 
 .nav-link:hover {
@@ -32,12 +24,12 @@
     color:rgb(234, 255, 0);
 }
 
-
 th {
     border-bottom: 5px solid deeppink!important;
 }
 
-/* .card-title {
-    border-bottom: 5px solid deeppink!important;
-} */
-
+input, select {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid deeppink;
+}

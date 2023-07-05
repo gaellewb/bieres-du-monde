@@ -1,21 +1,54 @@
+ARBORESCENCE :
 - index.php
+
 - router.php
+
 - controllers/
     - HomeController.php
     - BeersController.php
-    - ColorController.php
+    - colors/
+        - AmberController.php
+        - BlondController.php
+        - BrownController.php
+        - WhiteController.php
+    - complexCrud/
+        - ComplexCrudController.php
+    - simpleCrud/
+        - SimpleCrudController.php
     - ErrordController.php
+
 - views/
     - home.php
     - beers.php
-    - color.php
+    - colors/
+        - amber.php
+        - blond.php
+        - brown.php
+        - white.php
+    - complexCrud/
+        - ComplexCrud.php
+    - simpleCrud/
+        - SimpleCrud.php
     - error.php
+
 - models/
+    - BeersModel.php
+    - ColorModel.php
+    - ComplexCrudModel.php
+    - SimpleCrudModel.php
+
 - app/
-    - ControllerPrincipal.php
+    - footer.php
+    - headerer.php
     - loginBdd.php
-    - ModelPrincipal.php
+    - MainModel.php
+
 - styles/
     - style.css
+
 - assets/
     - img
+
+- .htaccess
+
+- .gitignore

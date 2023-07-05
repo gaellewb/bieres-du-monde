@@ -1,3 +1,7 @@
+# Activation du module de réécriture d'URL
 RewriteEngine On
 
+# Règle de réécriture d'URL
+# Cette règle permet de rediriger les requêtes correspondant à un certain format d'URL
+# vers le fichier index.php avec le paramètre "p" qui contient la partie correspondante de l'URL
 RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1

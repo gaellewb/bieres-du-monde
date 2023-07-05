@@ -4,10 +4,10 @@ function nav_item (string $lien, string $titre): string
 {
     $classe = 'nav-link';
     if ($_SERVER['SCRIPT_NAME'] === $lien) {
-        $classe = $classe . 'active';
+        $classe = $classe . ' active';
         // j'aurai pu aussi écrire $classe .= ' active'; c'est pareil
     }
-    return '<li class="nav-item text-center">
+    return '<li class="nav-item">
                 <a class="' . $classe . '" href="' . $lien . '">' . $titre . '</a>
             </li>' ;
 }
@@ -47,11 +47,11 @@ function nav_item (string $lien, string $titre): string
 <header>
     <nav class="navbar navbar-expand-md navbar-dark mb-4 navbar-monbg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/ecf_sbdm/HomeController/home"><img src="../assets/img/logo6.png" alt="petit logo PHP"></a>
+            <a class="navbar-brand" href="/ecf_sbdm/HomeController/home"><img src="../assets/img/logo.png" alt="petit logo SBDM"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
                 <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
