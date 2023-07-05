@@ -47,20 +47,20 @@ function nav_item (string $lien, string $titre): string
 <header>
     <nav class="navbar navbar-expand-md navbar-dark mb-4 navbar-monbg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/TESTecf_sbdm/HomeController/home"><img src="../assets/img/logo6.png" alt="petit logo PHP"></a>
+            <a class="navbar-brand" href="/ecf_sbdm/HomeController/home"><img src="../assets/img/logo6.png" alt="petit logo PHP"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <?= nav_item('/TESTecf_sbdm/HomeController/home', 'Accueil') ; ?>
-                <?= nav_item('/TESTecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
-                <?= nav_item('/TESTecf_sbdm/BlondController/blond', 'Nos blondes') ; ?>
-                <?= nav_item('/TESTecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
-                <?= nav_item('/TESTecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
-                <?= nav_item('/TESTecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
-                <?= nav_item('/TESTecf_sbdm/SimpleCrudController/simpleCrud', 'CRUD simple') ; ?>
-                <?= nav_item('/TESTecf_sbdm/ComplexCrudController/complexCrud', 'CRUD complexe') ; ?>
+                <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
+                <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
+                <?= nav_item('/ecf_sbdm/BlondController/blond', 'Nos blondes') ; ?>
+                <?= nav_item('/ecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
+                <?= nav_item('/ecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
+                <?= nav_item('/ecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
+                <?= nav_item('/ecf_sbdm/SimpleCrudController/simpleCrud', 'CRUD simple') ; ?>
+                <?= nav_item('/ecf_sbdm/ComplexCrudController/complexCrud', 'CRUD complexe') ; ?>
                 </ul>
             </div>
         </div>
