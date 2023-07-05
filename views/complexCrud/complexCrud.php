@@ -15,20 +15,20 @@ require 'app/header.php';
     <form action="" method="POST" class="text-end mb-4">  
         <div>
             <input type="text" id="article" name="nomBiere" placeholder="Nom bière à créer">
-            <input type="text" id="titrage" name="titrage" placeholder="Titrage">   
+            <input type="text" id="titrage" name="titrage" class="mb-1" placeholder="Titrage">   
 
             <select name="marque" id="marque">
                 <option value="">Choix marque</option>
                 <!-- Boucle pour chaque marque dans la variable $creates qui vient de la méthode getCreate, découpage du tablau $creates en ligne $create -->
                 <?php foreach ($creates as $create): ?>
-                    <option value="<?php echo $create['ID_MARQUE'] ?>">
+                    <option value="<?php echo $create['ID_MARQUE']?>">
                         <?php echo $create['NOM_MARQUE'] ?>
                     </option>
                 <!-- Fin de la boucle -->
                 <?php endforeach ?>
             </select>
 
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit1" name="submit1"><i class="fa-regular fa-square-plus fa-lg pe-3"></i>Créer un article
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit1" name="submit1"><i class="fa-regular fa-square-plus fa-lg pe-3"></i>Créer une bière
             </button>
         </div> 
     </form>
@@ -37,10 +37,8 @@ require 'app/header.php';
     <form action="" method="POST" class="text-end mb-4">
         <div class="mb-3">
             <input type="number" name="idBeer" id="idBeer" placeholder="N° bière à modifier">
-            <input type="text" name="newNameBeer" id="newNameBeer" placeholder="Nom nouvelle bière">
-            
-            <input type="number" id="titrage"  name="titrage" placeholder="Nouveau titrage">
-            
+            <input type="text" name="newNameBeer" id="newNameBeer" placeholder="Nom nouvelle bière">           
+            <input type="number" id="titrage"  name="titrage" class="mt-1 mb-1"  placeholder="Nouveau titrage">         
             <select name="marque2" id="marque2">
                 <option value="">Modifier marque</option>
                 <!-- Boucle pour chaque marque dans la variable $updates qui vient de la méthode getUpdate, découpage du tablau $updates en ligne $update -->
@@ -51,8 +49,7 @@ require 'app/header.php';
                 <!-- Fin de la boucle -->
                 <?php endforeach ?>
             </select>
-
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit2" name="submit2"><i class="fa-regular fa-pen-to-square pe-3"></i>Modifier une bière
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit2" name="submit2"><i class="fa-regular fa-pen-to-square pe-3"></i>Modifier une bière
             </button>
         </div>
     </form>
@@ -61,7 +58,7 @@ require 'app/header.php';
     <form action="" method="POST" class="text-end mb-4">
         <div>
             <input type="number" id="toDelete" name="toDelete" placeholder="N° bière à supprimer">
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit" name="submit"> 
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit" name="submit"> 
                 <i class="fa-regular fa-trash-can pe-3"></i>Supprimer une bière
             </button>
         </div>

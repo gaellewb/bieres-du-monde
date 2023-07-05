@@ -51,7 +51,7 @@ function nav_item (string $lien, string $titre): string
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse text-end" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
                 <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>

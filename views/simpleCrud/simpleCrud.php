@@ -16,7 +16,7 @@ require 'app/header.php';
         <div>
             <input type="text" id="newColor"  name="newColor" placeholder="Nom couleur à créer">
 
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit1" name="submit"><i class="fa-regular fa-square-plus fa-lg pe-3"></i>Créer une couleur</button>
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit1" name="submit"><i class="fa-regular fa-square-plus fa-lg pe-3"></i>Créer une couleur</button>
         </div>
     </form>
 
@@ -27,7 +27,7 @@ require 'app/header.php';
 
             <input type="text" name="newName" id="newName" placeholder="Nom nouvelle couleur">
 
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit2" name="submit"><i class="fa-regular fa-pen-to-square pe-3"></i>Modifier la couleur</button>
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit2" name="submit"><i class="fa-regular fa-pen-to-square pe-3"></i>Modifier la couleur</button>
         </div>
     </form>
 
@@ -59,7 +59,7 @@ require 'app/header.php';
         <div>
             <input type="number" id="toDelete" name="toDelete" placeholder="N° couleur à supprimer">
 
-            <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit3" name="submit"><i class="fa-regular fa-trash-can pe-3"></i>Supprimer une couleur</button>
+            <button type="submit" class="mt-1 btn btn-dark ps-5 pe-5" id="submit3" name="submit"><i class="fa-regular fa-trash-can pe-3"></i>Supprimer une couleur</button>
         </div>
     </form>
 

@@ -7,7 +7,7 @@ require 'app/header.php';
 ?>
 
 <div class="container text-center">
-    <img src="../assets/img/errorPage.png" alt="bouteilles de bières">
+    <h1>La page demandée n'existe pas</h1>
 </div>
 
 <?php

@@ -11,7 +11,8 @@ class HomeController {
     public function __construct() {
         $this->model = new BeersModel(); // Instanciation de BeersModel pour pouvoir accéder à ses méthodes
     }
-// Méthode index() qui sera appelée lors de l'accès à la page d'accueil
+    
+    // Méthode index() qui sera appelée lors de l'accès à la page d'accueil
     public function index() {
         // Appel de la méthode getRandBeers() de l'objet BeersModel pour obtenir des bières aléatoires
         $beers = $this->model->getRandBeers();

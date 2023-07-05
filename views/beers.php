@@ -35,8 +35,9 @@ require 'app/header.php';
         <!-- Fin de la boucle -->
         <?php endforeach ?>
         </tbody>
-
     </table>
+
+</div>
 
 <?php
 // Inclusion du fichier footer.php

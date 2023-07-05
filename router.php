@@ -1,18 +1,18 @@
 <?php
 
-require_once 'app/MainModel.php';
+require_once 'app/MainModel.php'; // Inclusion du fichier MainModel.php
 
-$url = $_SERVER['REQUEST_URI'];
+$url = $_SERVER['REQUEST_URI']; // Récupération de l'URL de la requête
 
-$path = parse_url($url, PHP_URL_PATH);
-$parts = explode('/', $path);
-$page = '/'.end($parts);
+$path = parse_url($url, PHP_URL_PATH); // Extraction du chemin de l'URL
+$parts = explode('/', $path); // Découpage du chemin en parties distinctes
+$page = '/'.end($parts); // Récupération de la dernière partie du chemin (nom de la page)
 
 switch ($page) {
     case '/home':
-        require_once 'controllers/HomeController.php';
-        $controller = new HomeController();
-        $controller->index();
+        require_once 'controllers/HomeController.php'; // Inclusion du fichier du contrôleur HomeController.php
+        $controller = new HomeController(); // Instanciation du contrôleur HomeController
+        $controller->index(); // Appel de la méthode index du contrôleur
         break;
     case '/beers':
         require_once 'controllers/BeersController.php';
@@ -51,7 +51,7 @@ switch ($page) {
         break;
     default:
         require_once 'controllers/ErrorController.php';
-        http_response_code(404);
+        http_response_code(404); // Définition du code de réponse HTTP à 404 (page non trouvée)
         $controller = new ErrorController();
         $controller->index();
         break;

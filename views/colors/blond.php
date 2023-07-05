@@ -8,7 +8,7 @@ require 'app/header.php';
 
 <div class="container">
 
-<h1>Découvrez nos blondes :</h1>
+    <h1>Découvrez nos blondes :</h1>
 
     <table class="table">
         <thead class="thead-">
