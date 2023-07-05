@@ -9,7 +9,7 @@ require 'app/header.php';
 <h1 class="mb-4">Table Couleur</h1>
 <h2>Créer, Lire, Modifier, Supprimer</h2>
 
-<!-- FORMULAIRE DE CREATION -->
+<!-- FORMULAIRE DE CREATION de couleur -->
 <form action='' method='POST' class="text-end mb-4">
     <div>
         <input type="text" id="newColor"  name="newColor" placeholder="Nom couleur">
@@ -66,9 +66,7 @@ require 'app/header.php';
 <!-- FORMULAIRE DE SUPPRESSION -->
 <form action='' method='POST' class="text-end mb-4">
     <div>
-        <!-- <label for="toDelete" class="lead">Supprimer</label> -->
         <input type="number" id="toDelete"  name="toDelete" placeholder="N° couleur">
-        <!-- <input type="submit" class="btn btn-dark m-4 ps-5 pe-5" id="submit" name="submit" value="Supprimer"> -->
         <button type="submit" class="btn btn-dark ps-5 pe-5" id="submit" name="submit"> 
             <i class="fa-regular fa-trash-can pe-3"></i>Supprimer une couleur
         </button>

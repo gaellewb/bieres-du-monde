@@ -11,22 +11,22 @@ class ComplexCrudController {
 
     public function index(){
         // appel de la fonction READ 
-        $beersAndColors = $this->model->getBeersAndColors();
+        $reads = $this->model->getRead();
 
         // appel de la fonction LISTE DES COULEURS
-        $colors = $this->model->getColors();
+        // $colors = $this->model->getColors();
 
         // appel de la fonction LISTE DES MARQUES
-        $marques = $this->model->getMarques();
+        // $marques = $this->model->getMarques();
 
         // appel de la fonction CREATE
-        $create = $this->model->getCreate();
+        $creates = $this->model->getCreate();
 
         // appel de la fonction UPDATE
-
+        $updates = $this->model->getUpdate();
 
         // appel de la fonction DELETE
-
+        $delete = $this->model->getDelete();
 
         require_once 'views/complexCrud/complexCrud.php';
     }

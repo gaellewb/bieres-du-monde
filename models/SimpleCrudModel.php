@@ -51,6 +51,7 @@ class SimpleCrudModel extends MainModel {
 
             $sql = "UPDATE couleur SET NOM_COULEUR = '$newName' WHERE NOM_COULEUR = '$oldColor'";
             $query = $this->connection->query($sql);
+            $query->execute();
             
             // Redirection vers la view
             header("Location:simpleCrud");
