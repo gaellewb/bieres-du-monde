@@ -8,7 +8,7 @@ class MainModel {
     // Méthode pour établir la connexion à la base de données
     public function getConnection() {
         // Inclure la page d'informations de connexion :       
-        require_once 'loginBdd.php';
+        require_once 'login.php';
         
         // Connexion à la base de données
         try {
