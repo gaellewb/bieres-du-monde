@@ -70,7 +70,7 @@ require 'app/header.php';
                 <!-- En-têtes des colonnes -->
                 <th scope="col">N° couleur</th>
                 <th scope="col">Couleur</th>
-                <th scope="col">Modification nom couleur</th>
+                <!-- <th scope="col">Modification nom couleur</th> -->
                 <th scope="col">Modifier</th>
                 <th scope="col">Supprimer</th>
             </tr>
@@ -83,13 +83,20 @@ require 'app/header.php';
                 <?= "<td>".$color['NOM_COULEUR']."</td>" ?> 
 
                 <!-- MARCHE PAS : Champ de modification. Création d'un formulaire pour pouvoir récupérer le  nom_couleur-->
-                <td>
+                <!-- <td> -->
                     <!-- <form action="" method="POST">  -->
-                        <input type="hidden" name="IdColor" value="<?= $color['ID_COULEUR'] ?>">
-
-                        <input type="text" name="updateColors" value="<?= $color['NOM_COULEUR'] ?>">
+                        <!-- <input type="hidden" name="IdColor" value="      -->
+                            <?
+                            // echo $color['ID_COULEUR'] 
+                            ?>
+                            <!-- "> -->
+                        <!-- <input type="text" name="updateColors" value=" -->
+                            <? 
+                            // echo$color['NOM_COULEUR'] 
+                            ?>
+                            <!-- "> -->
                     <!-- </form> -->
-                </td>
+                <!-- </td> -->
                 
                 <!-- MARCHE PAS : Update button -->
                 <td>

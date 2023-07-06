@@ -1,6 +1,3 @@
-</div>
-</main>
-
 <footer class="footer mt-auto py-3 navbar-monbg">
     <div class="container text-center">
         <span class="text-light">Mentions légales - Juin/Juillet 2023 | GaëlleW</span>

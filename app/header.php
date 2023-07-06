@@ -20,7 +20,7 @@ function nav_item (string $lien, string $titre): string
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Je teste si $title existe ou pas, si elle n'existe pas j'affiche le else -->
     <meta name="description" content="
-        <?php if (isset($descriptionPage)) { echo $descriptionPage; } else { echo 'ECF | Exercice de back end, PHP, structure MVC relié à base de données';}; ?>
+        <?php if (isset($descriptionPage)) { echo $descriptionPage; } else { echo 'ECF | Exercice de back end, PHP, structure MVC relié à une base de données';}; ?>
     ">
 
 <!-- Je teste si $title existe ou pas, si elle n'existe pas j'affiche le else -->
@@ -33,12 +33,12 @@ function nav_item (string $lien, string $titre): string
 <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <!-- Google font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
 
 </head>
 
@@ -53,14 +53,14 @@ function nav_item (string $lien, string $titre): string
             </button>
             <div class="collapse navbar-collapse text-end" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
-                <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
-                <?= nav_item('/ecf_sbdm/BlondController/blond', 'Nos blondes') ; ?>
-                <?= nav_item('/ecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
-                <?= nav_item('/ecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
-                <?= nav_item('/ecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
-                <?= nav_item('/ecf_sbdm/SimpleCrudController/simpleCrud', 'CRUD simple') ; ?>
-                <?= nav_item('/ecf_sbdm/ComplexCrudController/complexCrud', 'CRUD complexe') ; ?>
+                    <?= nav_item('/ecf_sbdm/HomeController/home', 'Accueil') ; ?>
+                    <?= nav_item('/ecf_sbdm/BeersController/beers', 'Toutes nos bières') ; ?>
+                    <?= nav_item('/ecf_sbdm/BlondController/blond', 'Nos blondes') ; ?>
+                    <?= nav_item('/ecf_sbdm/BrownController/brown', 'Nos brunes') ; ?>
+                    <?= nav_item('/ecf_sbdm/WhiteController/white', 'Nos blanches') ; ?>
+                    <?= nav_item('/ecf_sbdm/AmberController/amber', 'Nos ambrées') ; ?>
+                    <?= nav_item('/ecf_sbdm/SimpleCrudController/simpleCrud', 'CRUD simple') ; ?>
+                    <?= nav_item('/ecf_sbdm/ComplexCrudController/complexCrud', 'CRUD complexe') ; ?>
                 </ul>
             </div>
         </div>

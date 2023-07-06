@@ -73,6 +73,7 @@ public function getCreate() {
         return $resultat->fetchAll(PDO::FETCH_ASSOC);   
     }
 
+
 // METHOD : UPDATE ARTICLE
     public function getUpdate(){
         // Vérifie si les paramètres nécessaires sont définis dans $_POST
