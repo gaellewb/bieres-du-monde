@@ -74,7 +74,25 @@ class SimpleCrudModel extends MainModel {
 
 // METHOD : DELETE COLOR
     public function getDeleteColors() {
-    // MARCHE PAS : BOUTON pour supprimer sur la même page
+        // FONCTIONNE : FORMULAIRE pour supprimer sur la même page
+        // Vérifie si les paramètres nécessaires sont définis dans $_POST
+        if (isset($_POST['toDelete'])) {
+            $id=$_POST['toDelete']; // Récupère l'id de la couleur à supprimer à partir des données de formulaire
+            
+            // REQUETE SQL pour supprimer une couleur de la table "couleur" en fonction de l'id
+            $sql = "DELETE FROM couleur WHERE ID_COULEUR= :id";
+            $query = $this->connection->prepare($sql);
+            // Lie la valeur de l'ID à la requête SQL
+            $query->bindvalue(':id', $id, PDO::PARAM_INT);
+
+            //Execution de la requête pour supprimer la couleur
+            $query->execute();
+
+            // Redirection vers la view simpleCrud
+            header("Location:simpleCrud");
+        }
+
+        // MARCHE PAS : BOUTON pour supprimer sur la même page
         // if (isset($_GET['id'])) {
         //     $id=strip_tags($_GET['id']); // Récupère l'ID à partir des paramètres de l'URL
         //     echo "booooooooooooo";
@@ -92,23 +110,5 @@ class SimpleCrudModel extends MainModel {
         //     header("Location:simpleCrud");
         // }
 
-
-    // FONCTIONNE : FORMULAIRE pour supprimer sur la même page
-        // Vérifie si les paramètres nécessaires sont définis dans $_POST
-        if (isset($_POST['toDelete'])) {
-            $id=$_POST['toDelete']; // Récupère l'id de la couleur à supprimer à partir des données de formulaire
-            
-            // REQUETE SQL pour supprimer une couleur de la table "couleur" en fonction de l'id
-            $sql = "DELETE FROM couleur WHERE ID_COULEUR= :id";
-            $query = $this->connection->prepare($sql);
-            // Lie la valeur de l'ID à la requête SQL
-            $query->bindvalue(':id', $id, PDO::PARAM_INT);
-
-            //Execution de la requête pour supprimer la couleur
-            $query->execute();
-
-            // Redirection vers la view simpleCrud
-            header("Location:simpleCrud");
-        }
     }   
 }

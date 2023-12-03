@@ -73,7 +73,6 @@ public function getCreate() {
         return $resultat->fetchAll(PDO::FETCH_ASSOC);   
     }
 
-
 // METHOD : UPDATE ARTICLE
     public function getUpdate(){
         // Vérifie si les paramètres nécessaires sont définis dans $_POST
@@ -89,6 +88,7 @@ public function getCreate() {
         if (isset($submit2)) {
         // REQUETE pour mettre à jour le nom et le titrage de la bière
             $sql = "UPDATE article SET NOM_ARTICLE = :newNameBeer, TITRAGE = :titrage  WHERE ID_ARTICLE = :idBeer";
+
             $query = $this->connection->prepare($sql);
 
             // Je lie les emplacements nommés de la requête aux valeurs passées en paramètres
@@ -126,7 +126,8 @@ public function getCreate() {
             $id=$_POST['toDelete']; // Récupère l'id bière à supprimer
             
             // REQUETE SQL pour supprimer l'article avec l'id spécifié
-            $sql = "DELETE FROM article WHERE ID_ARTICLE= :id";
+                        $sql = "DELETE FROM article WHERE ID_ARTICLE= :id";
+
             $query = $this->connection->prepare($sql);
             // Je lie les :id à $id
             $query->bindvalue(':id', $id, PDO::PARAM_INT);
